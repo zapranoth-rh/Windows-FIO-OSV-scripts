@@ -15,7 +15,7 @@ result-filters\		directory containing scripts which post-process output files ge
 # Notes on run-scripts files
 
 The files in run-scripts were written with several assumptions which will be enumerated here:
-	1. The FIO run directory {fio} is installed on a data volume that has been mounted to D:\.
+	## The FIO run directory {fio} is installed on a data volume that has been mounted to D:\.
 	2. The run-scripts files should be copied into D:\fio.
 	3. The data file used by FIO will be created in D:\fio\data.
 	4. The results of each run will be saved to D:\fio\results.
