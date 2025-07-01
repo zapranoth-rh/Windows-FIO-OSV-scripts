@@ -1,0 +1,11 @@
+cd /D d:\fio
+
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=1M --numjobs=1 --iodepth=16 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-1M-iod16-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=1M --numjobs=1 --iodepth=4 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-1M-iod4-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=1M --numjobs=1 --iodepth=1 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-1M-iod1-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=32k --numjobs=1 --iodepth=16 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-32k-iod16-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=32k --numjobs=1 --iodepth=4 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-32k-iod4-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=32k --numjobs=1 --iodepth=1 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-32k-iod1-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=4k --numjobs=1 --iodepth=16 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-4k-iod16-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=4k --numjobs=1 --iodepth=4 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-4k-iod4-fs224g-nj1.json --output-format=json
+fio --name=4krandomreads --rw=read --direct=1 --ioengine=windowsaio --bs=4k --numjobs=1 --iodepth=1 --size=224G --directory=data --time_based=1 --runtime=600 --group_reporting --thread --output=results\sr-4k-iod1-fs224g-nj1.json --output-format=json
