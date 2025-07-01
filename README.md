@@ -20,6 +20,8 @@ The files in run-scripts were written with several assumptions which will be enu
    - [IO pattern (rr, rw, r, or w)]-[Block size]-iod[IOD]-fs[datafile size]g-nj[NJ].json.  
 6. Note that the fio-full-allnj*.bat files are the most currently used files and are the cleanest. Also be aware that they are not particularly elegant or sophisticated so could  be cleaned up or converted to ps1 style files to simplify them. That is work TBD.  
 	
+## Notes on result-filters files
+
 The files in result-filters make certain assumptions which will be enumerated here:  
 1. The filter-fio-json.sh script runs on Linux and needs to be copied to the result directory where the json files reside.  
 2. The filter-fio-json.sh script will only work on unix-style files, so you should convert the json files created by Windows FIO to that format via dos2unix or similar methods.  
